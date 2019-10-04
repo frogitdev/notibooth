@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/style.css">
+    <script defer src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script defer src="/socket.io/socket.io.js"></script>
+    <script defer src="/js/admin.js"></script>
+    <title>NotiBooth Admin</title>
+</head>
+<body>
+    <main>
+        <h2>관리자</h2>
+
+        <fieldset>
+            <legend>추가</legend>
+            <button onclick="send()">등록</button>
+            <span>메모</span>
+            <input type="text" name="" id="input-name" />
+        </fieldset>       
+
+        <fieldset>
+            <legend>대기열</legend>
+            <div id="standby"></div>
+        </fieldset>
+    </main>
+    <div id="credit">
+        <span><b>NotiBooth</b> 1.0.0 <a href="https://github.com/frogitdev/notibooth" target="_blank">(C) FrogIT</a></span>
+    </div>
+</body>
+</html>

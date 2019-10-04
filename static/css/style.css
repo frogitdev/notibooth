@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+}
+
+main {
+    max-width: 700px;
+    margin: 50px auto;
+    font-family: monospace;
+}
+button {
+    width: 50px;
+}
+
+#credit {
+    position: fixed;
+    width: 100vw;
+    bottom: 0;
+    height: 42px;
+
+    text-align: right;
+    font-size: 14px;
+    color: darkslategray;
+}
+
+#display {
+    background: #000;
+    color: #fff;
+}
+
+#noti p {
+    display: inline-block;
+    margin: 0;
+    padding: 50px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 4em;
+    user-select: none;
+
+    animation: blinker 1s ease 5;
+}
+
+@keyframes blinker {
+    50% {
+        background: lightgray;
+        color: #000;
+    }
+}
+
+#allowaudio {
+    width: 100px;
+    height: 100px;
+    background: lightblue;
+}
